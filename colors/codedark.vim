@@ -220,7 +220,7 @@ call <sid>hi('Structure', s:cdBlue, {}, 'none', {})
 call <sid>hi('Typedef', s:cdBlue, {}, 'none', {})
 
 call <sid>hi('Special', s:cdYellowOrange, {}, 'none', {})
-call <sid>hi('SpecialChar', s:cdFront, {}, 'none', {})
+call <sid>hi('SpecialChar', s:cdYellowOrange, {}, 'none', {})
 call <sid>hi('Tag', s:cdFront, {}, 'none', {})
 call <sid>hi('Delimiter', s:cdFront, {}, 'none', {})
 if g:codedark_italics | call <sid>hi('SpecialComment', s:cdGreen, {}, 'italic', {}) | else | call <sid>hi('SpecialComment', s:cdGreen, {}, 'none', {}) | endif
@@ -231,14 +231,14 @@ call <sid>hi("Conceal", s:cdFront, s:cdBack, 'none', {})
 
 call <sid>hi('Ignore', s:cdBack, {}, 'none', {})
 
-call <sid>hi('Error', s:cdRed, s:cdBack, 'undercurl', s:cdRed)
+call <sid>hi('Error', s:cdFront, s:cdBack, 'undercurl', s:cdRed)
 
 call <sid>hi('Todo', s:cdNone, s:cdLeftMid, 'none', {})
 
-call <sid>hi('SpellBad', s:cdRed, s:cdBack, 'undercurl', s:cdRed)
-call <sid>hi('SpellCap', s:cdRed, s:cdBack, 'undercurl', s:cdRed)
-call <sid>hi('SpellRare', s:cdRed, s:cdBack, 'undercurl', s:cdRed)
-call <sid>hi('SpellLocal', s:cdRed, s:cdBack, 'undercurl', s:cdRed)
+call <sid>hi('SpellBad', s:cdFront, s:cdBack, 'undercurl', s:cdRed)
+call <sid>hi('SpellCap', s:cdFront, s:cdBack, 'undercurl', s:cdLightGreen)
+call <sid>hi('SpellRare', s:cdFront, s:cdBack, 'undercurl', s:cdRed)
+call <sid>hi('SpellLocal', s:cdFront, s:cdBack, 'undercurl', s:cdRed)
 
 
 " Neovim Treesitter:
@@ -597,9 +597,9 @@ call <sid>hi('TemplateTemplateParameter', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('UsingDeclaration', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('MemberRef', s:cdLightBlue, {}, 'italic', {})
 call <sid>hi('MemberRefExpr', s:cdYellow, {}, 'italic', {})
-call <sid>hi('Namespace', s:cdSilver, {}, 'none', {})
-call <sid>hi('NamespaceRef', s:cdSilver, {}, 'none', {})
-call <sid>hi('NamespaceAlias', s:cdSilver, {}, 'none', {})
+call <sid>hi('Namespace', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('NamespaceRef', s:cdBlueGreen, {}, 'none', {})
+call <sid>hi('NamespaceAlias', s:cdBlueGreen, {}, 'none', {})
 
 " C++ lsp-cxx-highlight
 call <sid>hi('LspCxxHlSymClass', s:cdBlueGreen, {}, 'none', {})
@@ -608,7 +608,7 @@ call <sid>hi('LspCxxHlSymEnum', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('LspCxxHlSymTypeAlias', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('LspCxxHlSymTypeParameter', s:cdBlueGreen, {}, 'none', {})
 call <sid>hi('LspCxxHlSymConcept', s:cdBlueGreen, {}, 'italic', {})
-call <sid>hi('LspCxxHlSymNamespace', s:cdSilver, {}, 'none', {})
+call <sid>hi('LspCxxHlSymNamespace', s:cdBlueGreen, {}, 'none', {})
 
 " Coc Explorer:
 call <sid>hi('CocHighlightText', {}, s:cdSelection, 'none', {})
